@@ -1,0 +1,31 @@
+@media screen and (max-width: 750px) {
+  .big-container {
+    height: 80vh;
+    flex-direction: column;
+  }
+  .side-tools {
+    height: 20vh;
+    order: 1;
+  }
+  .side-tools .tools-list ul {
+    flex-direction: row;
+    width: 100vw;
+    align-items: center;
+  }
+  .side-tools .tools-list ul li {
+    margin: 1%;
+  }
+  .restart-game {
+    width: 100vw;
+    margin: auto;
+  }
+  #change-mode {
+    margin-top: 1%;
+  }
+  .homepage .startGame {
+    width: 100vw;
+  }
+  #game-board {
+    background-position: center center;
+  }
+}

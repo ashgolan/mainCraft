@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Main Craft</title>
+    <link rel="stylesheet" href="/styles/normalize.css" />
+    <link rel="stylesheet" href="/styles/main.css" />
+    <link rel="stylesheet" href="/styles/mobile.css" />
+  </head>
+  <body>
+    <div class="big-container">
+      <div class="side-tools">
+        <div class="tools-list">
+          <ul>
+            <input id="change-mode" type="range" min="1" max="2" value="1" />
+            <label for="">Day / <span class="nightText">Night</span></label>
+            <li
+              class="tool"
+              id="shovel"
+              style="background-image: url('/images/shovel.png')"
+            ></li>
+            <li
+              class="tool"
+              id="axe"
+              style="background-image: url('/images/axe.png')"
+            ></li>
+            <li
+              class="tool"
+              id="pickaxe"
+              style="background-image: url('/images/pickaxe.png')"
+            ></li>
+            <li class="saving" id="soil"></li>
+            <li class="saving" id="trunk"></li>
+            <li class="saving" id="leaves"></li>
+            <li class="saving" id="stone"></li>
+            <li class="saving" id="grass"></li>
+          </ul>
+        </div>
+        <div class="restart-game">
+          <button class="restartGame">Restart</button>
+        </div>
+      </div>
+      <div id="game-board"></div>
+    </div>
+    <div class="homepage">
+      <button class="startGame">Start Game</button>
+      <label class="signature" for="">By Alaa Shaalan</label>
+    </div>
+  </body>
+  <script src="/app.js"></script>
+</html>

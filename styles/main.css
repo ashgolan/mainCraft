@@ -1,0 +1,169 @@
+@import url("https://fonts.googleapis.com/css2?family=Akaya+Kanadaka&family=Chango&family=Faster+One&family=Frijole&family=Fuzzy+Bubbles:wght@700&family=Mochiy+Pop+One&family=Noto+Sans+Arabic:wght@600&family=Noto+Sans+Hebrew:wght@600;900&family=Overpass+Mono:wght@700&family=Playball&family=Rampart+One&family=Roboto:wght@500&family=Zilla+Slab&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
+  font-family: "Chango", cursive;
+  font-weight: lighter;
+}
+
+body {
+  overflow: hidden;
+}
+.homepage {
+  display: flex;
+  flex-direction: column;
+  background-image: url("/images/Minecraft-PS4-Wallpapers-16.jpg");
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  justify-content: space-around;
+  align-items: center;
+}
+.startGame {
+  width: 30%;
+  margin: auto;
+  height: 50px;
+  margin-bottom: 5%;
+  border: none;
+  background-color: gold;
+  color: rgb(138, 4, 4);
+  font-size: 2rem;
+  border-radius: 20px;
+  cursor: pointer;
+}
+.startGame:hover {
+  background-color: rgb(32, 102, 38);
+  color: white;
+}
+.signature {
+  text-align: center;
+  color: rgb(238, 228, 171);
+  margin-bottom: 5%;
+}
+.big-container {
+  display: none;
+  height: 100vh;
+}
+.trunk {
+  background-color: rgb(165, 91, 42);
+  border-radius: 5px;
+}
+.leaves {
+  background-color: green;
+  border-radius: 8px;
+}
+.soil {
+  background-color: rgb(150, 114, 67);
+}
+.grass {
+  /* background-image: url("/images/grass.png"); */
+  background-image: url("/images/grass.png");
+  background-size: cover;
+}
+.stone {
+  background-color: rgb(70, 68, 68);
+  border-radius: 8px;
+  outline: 1px rgb(179, 173, 173) solid;
+}
+
+#soil,
+#leaves,
+#stone,
+#trunk,
+#grass,
+.tool {
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border: 1px rgb(245, 242, 242) solid;
+  border-radius: 10px;
+  color: white;
+  align-items: center;
+  background-size: cover;
+}
+#grass {
+  color: rgb(49, 46, 46);
+  /* color: rgb(238, 45, 45); */
+}
+.tool {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 5px;
+  background-size: cover;
+}
+
+li:hover {
+  box-shadow: 2px 2px 75px 12px rgba(255, 216, 0, 1);
+  -webkit-box-shadow: 2px 2px 75px 12px rgba(255, 216, 0, 1);
+  -moz-box-shadow: 2px 2px 75px 12px rgba(255, 216, 0, 1);
+}
+#game-board {
+  flex: 1 1 80%;
+  display: grid;
+  /* background-color: rgb(141, 194, 238); */
+  background-image: url("/images/sky.jpg");
+  grid-template-rows: repeat(20, 1fr);
+  grid-template-columns: repeat(30, 1fr);
+  cursor: pointer;
+}
+.side-tools {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 20%;
+  background-color: black;
+  justify-content: space-around;
+}
+.tools-list {
+  flex: 1 1 80%;
+  background-color: black;
+}
+.tools-list ul {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  width: 50%;
+  margin: auto;
+  color: white;
+}
+.tools-list ul li {
+  margin-top: 5%;
+  cursor: pointer;
+}
+
+.restart-game {
+  flex: 1 1 20%;
+  background-color: black;
+  text-align: center;
+}
+.restartGame {
+  width: 80%;
+  margin: auto;
+  margin-top: 10%;
+  padding: 5%;
+  border-radius: 10px;
+  border: none;
+  background-color: orange;
+  color: rgb(148, 22, 22);
+  font-weight: bold;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.restartGame:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(32, 102, 38);
+}
+
+#change-mode {
+  cursor: pointer;
+  margin-top: 5%;
+  display: inline-block;
+}
+.nightText {
+  color: gold;
+}
